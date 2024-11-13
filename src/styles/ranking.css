@@ -1,0 +1,110 @@
+:root {
+    --bg-color: #008cff;
+    --text-color: #b43930;
+    --nav-bg-color: #b9b2a6;
+    --nav-text-color: #000;
+    --highlight-color: #ee665c; 
+    --secondary-highlight: #232526;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg-color), #2a2a73); 
+    color: var(--text-color);
+  }
+  
+  header {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: var(--highlight-color); 
+    text-shadow: 3px 3px 0 var(--secondary-highlight); 
+  }
+  
+  .back-home {
+    color: var(--highlight-color);
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .back-home i {
+    color: var(--secondary-highlight);
+  }
+  
+  .back-home:hover {
+    color: var(--secondary-highlight);
+  }
+  
+  main {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+  }
+  
+  .ranking-container {
+    border: 4px double var(--highlight-color);
+    border-radius: 15px;
+    background: rgba(20, 20, 50, 0.85);
+    padding: 30px;
+    box-shadow: 0 0 10px var(--highlight-color);
+    text-align: center;
+  }
+  
+  .ranking-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px 10px; 
+    font-size: 1rem;
+  }
+  
+  .ranking-table th,
+  .ranking-table td {
+    padding: 15px 15px;
+    text-align: center;
+    color: var(--text-color); 
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 19px;
+  }
+  
+  .ranking-table th {
+    background: var(--highlight-color); 
+    color: var(--text-color);
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #000;
+  }
+  
+  .ranking-table tr:nth-child(even) td {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .ranking-table tr:hover td {
+    background: rgba(255, 0, 142, 0.3);
+    color: var(--text-color);
+  }
+  
+  footer {
+    padding: 15px;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    text-shadow: 1px 1px 0 var(--highlight-color);
+  }
+  
+  footer p {
+    margin-top: 15px;
+  }
